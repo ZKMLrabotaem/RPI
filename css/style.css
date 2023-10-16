@@ -1,1 +1,637 @@
+:root {
+    --f5: 14.6px;
+    --f4: 18px;
+    --f3: 25px;
+    --f2: 33.28px;
+    --f1: 33.33px;
+    --text-color: white;
+    --color1: #29a19c;
+    --color2: #222831;
+}
 
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    font-family: 'Montserrat';
+    font-size: var(--f4);
+    color: var(--text-color);
+    background-color: #111111;
+}
+
+main {
+    width: 1440px;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    background-color: var(--color2);
+}
+
+h1 {
+    margin: 0;
+}
+
+a {
+    position: relative;
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+p {
+    margin: 0;
+}
+
+.background-img {
+    margin-top: 26px;
+    margin-left: 45px;
+    position: absolute;
+    display: flex;
+    z-index: 1;
+}
+
+.background-wave {
+    margin-bottom:-35px;
+    position: relative;
+}
+
+.background-wavedown {
+    margin-bottom: -30px;
+    position: relative;
+}
+
+.background-waveup {
+    margin-top: 0px;
+    margin-bottom: -35px;
+    z-index:0;
+}
+
+.pos-center1 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.pos-center2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.bord-standart {
+    width: 1440px;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+}
+
+.order-button {
+    padding: 9px 29px;
+    border-radius: 15px;
+    font-size: var(--f1);
+    font-weight: bold;
+    position: relative;
+    display: inline-block;
+    color: var(--text-color);
+    z-index: 2;
+}
+
+.order-green {
+    background-color: var(--color1);
+    --text-color: white;
+}
+
+.order-grey {
+    background-color: var(--color2);
+    --text-color: white;
+}
+
+.order-green:hover {
+    --text-color: var(--color1);
+    background-color: white;
+    transition: 0.5s;
+}
+
+.order-grey:hover {
+    --text-color: var(--color2);
+    background-color: white;
+    transition: 0.5s;
+}
+
+.header-bor {
+    padding: 43px 53px 30px 53px;
+    background-color: var(--color2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-button {
+    margin-right: 44px;
+    font-size: var(--f3);
+    font-family: 'Montserrat';
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: var(--text-color);
+    display: inline-block;
+}
+
+.header-button::before {
+    width: 0;
+    height: 3px;
+    left: 5px;
+    bottom: 0px;
+    position: absolute;
+    background-color: var(--color1);
+    content: '';
+}
+
+.header-button:hover:before {
+    width: 85%;
+    transition: 0.5s;
+}
+
+.header-logo {
+    height: 52.5px;
+    margin-right: 3px;
+    margin-top: -1px;
+}
+
+.home-bor {
+    margin-bottom: 38px;
+    padding: 20px 53px 0px 53px;
+    background-color: var(--color2);
+}
+
+.home-content {
+    margin-left: 3px;
+}
+
+.home-title {
+    margin-top: 3px;
+    margin-left: -7px;
+    font-weight: 100;
+    font-family: 'GrandHotel';
+    font-size: 153.15px;
+    letter-spacing: 6.126px;
+}
+
+.home-post-title {
+    margin: 11px 0px 0px 0px;
+    font-size: var(--f2);
+    font-family: 'Montserrat';
+    font-weight: bold;
+    letter-spacing: 1.9968px;
+    line-height: 70px;
+}
+
+.home-text {
+    width: 510px;
+    margin-top: -1px;
+    margin-bottom: 22px;
+    margin-left: 3px;
+    font-size: var(--f5);
+    font-family: 'Montserrat2';
+    letter-spacing: 0.876px;
+    line-height: 24px;
+}
+
+.home-img {
+    top: 10px;
+    right: 0px;
+    margin-top:2.5px;
+    position: absolute;
+    z-index: 0;
+}
+
+.menu-black {
+    padding: 20px 106px 20px 53px;
+    margin-bottom:-13px;
+    position: relative;
+    background-color: var(--color1);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.menu-black-order {
+    width: 450px;
+    margin-left: 52px;
+}
+
+.menu-black-title {
+    margin-top:-62px;
+    margin-bottom:92px;
+    font-size: 125px;
+    font-weight: normal;
+    font-family: 'GrandHotel';
+    letter-spacing: 5px;
+    line-height: 114px;
+}
+
+.menu-black-text {
+    width: 625px;
+    margin-top: 35px;
+    margin-right: -5px;
+    font-family: 'Montserrat2';
+    font-weight: 100;
+    font-size: 23.67px;
+    letter-spacing: 1.4202px;
+    line-height: 39.24px;
+    text-align: right;
+    opacity: 95%;
+}
+
+.menu-black-info {
+    margin-right:36px;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+.menu-black-img {
+    margin-top:43px;    
+}
+
+.menu-addit {
+    padding: 20px 106px 20px 53px;
+    background-color: var(--color2);
+}
+
+.menu-hot {
+    padding: 0px 0px 0px 20px;
+    margin: -28px 0px 53px 0px;
+}
+
+.menu-hot-order {
+    width: 400px;
+    display: flex;
+    align-items: end;
+    flex-direction: column;
+}
+
+
+.menu-hot-title {
+    margin-top:-5px;
+    margin-bottom: 100px;
+    margin-right: 8px;
+    font-size: 125px;
+    font-weight: normal;
+    font-family: 'GrandHotel';
+    line-height: 114px;
+    letter-spacing: 5px;
+    text-align: right;
+}
+
+.menu-hot-text {
+    width: 610px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-family: 'Montserrat2';
+    font-weight: 100;
+    font-size: 22.77px;
+    line-height: 41.21px;
+    letter-spacing: 1.3602px;
+    text-align: left;
+    opacity: 0.95;
+}
+
+.menu-white-order {
+    width: 400px;
+    margin-top: -75px;
+    margin-left: 2px;
+}
+
+.menu-white-title {
+    margin-bottom: 95px;
+    margin-left: -2px;
+    font-size: 125px;
+    font-weight: normal;
+    font-family: 'GrandHotel';
+    line-height: 112.71px;
+    letter-spacing: 5px;
+    text-align: left;
+}
+
+.menu-white-info {
+    margin-top:5px;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+.menu-white-text {
+    width: 575px;
+    margin-top: 40px;
+    margin-right: -20px;
+    font-size: 21.45px;
+    font-family: 'Montserrat2';
+    font-weight: normal;
+    line-height: 38.82px;
+    letter-spacing: 1.287px;
+    text-align: right;
+}
+
+.menu-white-img {
+    margin-top:0px;
+    margin-right: -15px;
+}
+
+.menu-voucher-title {
+    margin: 45px 0px 0px 0px;
+    font-size: 130.93px;
+    font-weight: 100;
+    font-family: 'GrandHotel';
+    line-height: 120px;
+}
+
+.menu-voucher-img {
+    margin-top:20px;
+    margin-bottom: 3px;
+    margin-left: 30px;
+}
+
+.menu-voucher-order {
+    margin-right: -3px;
+    margin-top: 6px;
+    margin-left: 51px;
+}
+
+.menu-voucher{
+    align-items: center;
+}
+
+.customer-reviews-title {
+    margin-top: 53px;
+    margin-right: 7px;
+    margin-bottom: 50px;
+    font-size: 87.5px;
+    font-weight: normal;
+    font-family: 'GrandHotel';
+    line-height: 120px;
+    text-align: center;
+}
+
+.customer-reviews-content {
+    margin: 0px -70px;
+    display: flex;
+    flex-direction: row;
+}
+
+.customer-reviews-part {
+    width: 500px;
+    margin: 0px 59px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.customer-reviews-img1 {
+    margin-right: 7px;
+}
+
+.customer-reviews-name {
+    margin-top: 70px;
+    margin-bottom: 0;
+    font-size: 50px;
+    font-weight: normal;
+    font-family: 'GrandHotel';
+    line-height: 27.5px;
+}
+.customer-reviews-text {
+    width: 481px;
+    margin-top: 46px;
+    margin-bottom: 5px;
+    font-size: var(--f3);
+    font-family: 'Montserrat2';
+    font-weight: 100;
+    letter-spacing: 1px;
+    line-height: 27.5px;
+    text-align: center;
+    opacity: 0.95;
+}
+
+.customer-name1 {
+    margin: 62px 12px 0px 0px;
+}
+
+.customer-text1 {
+    margin-right: 5px;
+}
+
+.customer-name2 {
+    margin-right: 8px;
+}
+
+.customer-text2 {
+    margin-top: 39px;
+}
+
+.working-bor {
+    margin-top:-5px;
+    position: relative;
+    font-size: var(--f3);
+    font-family: 'GrandHotel';
+    text-align: center;
+    background-color: var(--color1);
+    transition: 1s;
+}
+
+.working-title {
+    margin: 22px 0 50px 4px;
+    font-size: 97.78px;
+    font-weight: 100;
+    letter-spacing: 3.9112px;
+}
+
+.working-days {
+    margin-top: 80px;
+    margin-right: 4px;
+    margin-bottom: 2px;
+    font-size: 37.5px;
+    font-family: 'Montserrat';
+    font-weight: bold;
+}
+
+.working-time {
+    padding-bottom: 35px;
+    margin-right: 7px;
+    font-size: 37.5px;
+    font-family: 'Montserrat2';
+    font-weight: normal;
+}
+
+.working-2issue {
+    margin-top: 65px;
+}
+
+.branches-bor {
+    padding: 25px 0px 20px 0px;
+    background-color: var(--color2);
+    justify-content: space-around;
+}
+
+.branches-title {
+    margin: 0px 0px -18px 0px;
+    font-size: 87.5px;
+    font-weight: 100;
+    font-family: 'GrandHotel';
+    line-height: 120px;
+    letter-spacing: 3.5px;
+    text-align: center;
+}
+
+.branches-shop-bor {
+    margin-top: -1px;
+    margin-right: -3px;
+    margin-left: 6px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    text-align: center;
+}
+
+.branches-shop1-bor {
+    margin-right: 36px;
+}
+
+.branches-shop3-bor {
+    margin-left: 36px;
+}
+
+.branches-shop1-content {
+    left: -8px;
+}
+
+.branches-shop1-text {
+    margin-left: -20px;
+}
+
+.branches-shop-text {
+    width: 350px;
+    padding: 0px 30px 0px 35px;
+    margin-top: -3px;
+    font-size: var(--f5);
+    font-weight: 100;
+    font-family: 'Montserrat2';
+    line-height: 28px;
+    letter-spacing: 0.8748px;
+}
+
+.branches-city-text {
+    width: 248px;
+    padding: 9px 0px;
+    margin: 38px 0px 40px 0px;
+    position: relative;
+    font-size: var(--f1);
+    font-family: 'Montserrat';
+    font-weight: bold;
+    letter-spacing: 1.9998px;
+    color: var(--text-color);
+    background-color: var(--color1);
+    border-radius: 15px 15px 15px 20px;
+}
+
+.branches-city-text:before {
+    width: 15px;
+    height: 40px;
+    top: 0;
+    left: 3px;
+    margin-top: 30px;
+    position: absolute;
+    background-color: var(--color1);
+    transform: rotate(-20deg);
+    border-radius: 70%;
+    content: "";
+}
+
+.contact-bor {
+    padding: 20px 70px 50px 70px;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--color1);
+    z-index: 1;
+}
+
+.contact-content a {
+    margin-bottom: 5px;
+    font-size: 22.22px;
+    font-family: 'Montserrat2';
+    font-weight: normal;
+    letter-spacing: 1.3332px;
+    line-height: 31.5px;
+    opacity: 0.95;
+}
+
+.contact-content p {
+    margin-bottom: 5px;
+    font-size: 22.22px;
+    font-family: 'Montserrat2';
+    font-weight: normal;
+    letter-spacing: 1.3332px;
+    line-height: 31.5px;
+    opacity: 0.95;
+}
+
+.contact-img {
+    width: 305px;
+    height: 72px;
+    margin-top: -4px;
+    margin-left: -10px;
+}
+
+.contact-content {
+    margin-top: 3px;
+    margin-right: -10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.contact-title {
+    margin-left: 90px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.contact-text {
+    margin-right: 30px;
+    margin-bottom: 50px;
+    font-size: var(--f1);
+    letter-spacing: 1.3332px;
+}
+
+.footer-bor {
+    padding: 30px 53px 38px 53px;
+    background-color: var(--color1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-bor::after {
+    width: 100%;
+    height: 12px;
+    left: 0;
+    bottom: -12px;
+    position: absolute;
+    background-color: var(--color2);
+    content: '';
+}
+
+.footer-list {
+    top: 2px;
+    margin-top: 12px;
+    margin-right: 53px;
+    margin-left: 10px;
+    font-size: 19.54px;
+    font-family: 'Montserrat2';
+    font-weight: bold;
+    letter-spacing: 0.7816px;
+    text-decoration: none;
+}
+
+.footer-icons {
+    margin-left: 40px;
+    font-size: 24px;
+    color: var(--text-color);
+}
