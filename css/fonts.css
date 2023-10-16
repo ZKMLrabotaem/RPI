@@ -1,0 +1,22 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../opt/fonts/Montserrat.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat2';
+    src: url('../opt/fonts/Montserrat2.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GrandHotel';
+    src: url('../opt/fonts/GrandHotel.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
